@@ -1,0 +1,107 @@
+<!DOCTYPEhtml>
+<html lang="en">
+  <head>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+            <link rel="stylesheet" href="style.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+  </head>
+  <body id="home">
+    <div id="main">
+    <nav class="nav">
+    
+        <button onclick="home()" class="button" id="btn1">Home</button>
+        
+        <button onclick="Portal();"class="button" id="btn2"> Portal</a>
+        
+        <button class="button" id="btn3">Meet</button> 
+        
+        <button onclick="sucess();"class="button" id="btn4">Availability</button>
+        
+      </nav>
+      <div class="message"><div><img src="theme.png" id="msg"/></div><span class="name">Futo Roomy</span>
+      
+      <button id="msg-btn">Get Started</button>
+      </div>
+    
+      <section id="form"class="form">
+   <p class="sucess"></p>
+   <h2> Need A Room-mate??</h2>
+   <h3>Kindly fill the form below</h3>
+   <label>Desired Location in School</label>
+  <br>
+  <input type="text" placeholder="Location"id="locate1"> <br>
+  <label>Whats your Gender?</label>
+  <input type="text" id="gender1" placeholder="Sex" ><br>
+  <input placeholder="phone-number" id="gender2" type="number"><br>
+  <label>Religion of the person you want to stay with</label>
+  <input placeholder="Religion" id="age2"> <br>
+  <label>Age Grade</label>
+  <input placeholder="Age" id="age1"><br>
+  <input type="text"id="age3" placeholder="Level"><br>
+  <input type="text"id="locate2" placeholder="Department"><br>
+  <input id="input" placeholder="Input your password"type="text" style="width:80%; display:flex; justify-content:center; margin:auto;"><br>
+  <input id="name" placeholder="Full Name"type="text" style="width:80%; display:flex; justify-content:center; margin:auto;"><br>
+    <input id="email" placeholder="Email Address "type="email" style="width:80%; display:flex;color:green; justify-content:center; margin:auto;"><br>
+  <textarea style="color:white;" id="message"col="5" row="15" placeholder="Describe the kind of roommate you want"></textarea><br>
+  <button id="myForm"  type="submit" >submit</button>
+   </section>
+  </div>
+  
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("Fzqo0ai9Vym4h0tEg");
+   })();
+</script>
+ <script>
+ const button = document.getElementById("myForm");
+   button.addEventListener("click", function(event) {
+  event.preventDefault(); // Prevent form submission
+//  import emailjs from 'emailjs-com';
+  // Get form data
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+  
+  const age1 = document.getElementById("age1").value;
+  const age2 = document.getElementById("age2").value;
+  const age3 = document.getElementById("age3").value;
+  const locate1 = document.getElementById("locate1").value;
+    const locate2 = document.getElementById("locate2").value;
+  //const locate3= document.getElementById("locate3").value;
+  const gender1 = document.getElementById("gender1").value;
+  const gender2= document.getElementById("gender2").value;
+  // Send email using EmailJS
+   emailjs.send("service_devvfid","template_9xls3ky",{
+    name: name,
+    email: email,
+    age1: age1,
+    age2: age2,
+    age3: age3,
+    gender1: gender1,
+    gender2: gender2,
+    locate1: locate1,
+    locate2: locate2,
+   // locate3: locate3,
+    email: email,
+    message: message
+  })
+  .then(function(response) {
+    alert("Request sent successfully!");
+    // Reset the form
+    document.getElementById("myForm").reset();
+  }, function(error) {
+    alert("An error occurred while sending the email.");
+    console.error(error);
+  });
+});
+ </script>
+ <script src="script.js"></script>
+  </body>
+  <script src="https://kit.fontawesome.com/68ac6bbe19.js" crossorigin="anonymous"></script>
+ 
+    
+</html>

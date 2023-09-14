@@ -1,0 +1,433 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-height: 100%;
+  max-width: 100%;
+}
+body{
+ background-color:black;
+ position: relative;
+ color: white;
+ width:100%;
+ font-family: Sans-Serif;
+ font-size: 11px;
+ font-weight: 150;
+}
+#main{
+  object-fit:cover;
+  height: 101vh;
+  border-bottom: 0px solid darkgrey;
+  margin-bottom:none;
+  padding: none;
+background-size:cover ;
+ background-image: url('/Duplex2.jpeg');
+ opacity: 80%;
+ position: none;
+ z-index: 1000px;
+}
+img{
+  width: 100%;
+  height:101vh;
+  
+  
+}
+.nav{
+  display: flex;
+  justify-content: space-around;
+ margin: auto;
+ margin-bottom: 50%;
+}
+#form{
+  display: grid;
+  justify-content: center;
+  margin: auto;
+ border: 1px solid darkgrey;
+ width:90%;
+ background: black;
+  opacity: 70%;
+  border-radius: 15px;
+  text-align: center;
+  padding-bottom: 6%;
+  padding-top: 10%;
+}
+.button,label,select{
+  margin:2px;
+}
+select{
+  width: 100%;
+  padding: 2%;
+  margin-bottom: 1%;
+  color: white;
+  font-size: 15px;
+}
+.inner-container{
+  width:100%;
+}
+#myForm{
+  background: black;
+  padding: 4%;
+  color: white ;
+  border-radius: 10px;
+  border: 1px solid white;
+  
+}
+#myForm:hover{
+  color:white;
+  background:#0D6EFD ;
+  transition:0.2 ease;
+  border:none;
+}
+.message{
+  margin-top:-48%;
+  border:none;
+  margin-bottom: 3%;
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  padding:1%;
+  background: black;
+  opacity: 70%;
+  box-shadow:white;
+}
+#msg{
+ border-top-left-radius: 60px;
+ border-top-right-radius: 10px;
+ border-bottom-left-radius: 10px;
+ border-bottom-right-radius: 60px;
+ border-bottom:30px solid white;
+ border-top:30px solid white;
+  height:5vh;
+  font-size: 50px;
+  font-weight: 50;
+  font-family: Sans-Serif;
+  margin-bottom:15%;
+width: 100%;
+opacity:60%;
+
+}
+.name{
+  font-family: 'Dancing Script', cursive;
+font-family: 'Montserrat', sans-serif;
+font-size: 30px;
+font-weight: 200;
+margin-top:-10%;
+margin-bottom: 10%;
+}
+#msg-btn{
+  background: #0D6EFD;
+  color: white;
+  padding: 10%;
+  border: none;
+  font-weight: 200;
+  font-size: 20px;
+ padding-left:20px;
+ padding-right: 20px;
+border-radius: 15px;
+}
+#msg-btn:hover{
+  
+  padding:5%;
+  transition: 0.5s ease in ;
+}
+a{
+  border:none;
+}
+a:hover {
+
+  border-bottom:1px solid black;
+}
+#message{
+  display: grid;
+  align-self: center;
+  justify-content: center;
+  margin: auto;
+  width: 80%;
+}
+.button{
+  background: #0D6EFD;
+  color:white;
+  padding: 2%;
+  border-top-left-radius: 60px;
+ border-top-right-radius: 3px;
+ border-bottom-left-radius: 30px;
+ border-bottom-right-radius: 60px;
+ border:none;
+ opacity: 80%;
+}
+#grant{
+  color:white;
+  font-size: 20px;
+  z-index: 1000;
+  position: fixed;
+  top:30%;
+  border:none;
+  border-radius: 15px;
+  width:50%;
+ left: 25%;
+  left: 25%;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin: auto;
+  text-align: center;
+ background: black;
+ 
+}
+#input{
+  color: white;
+}
+#name{
+  color: white;
+}
+#email{
+  color: white;
+}
+
+#addition{
+  width: 100%;
+  background: white;
+  color: black;
+  display: grid;
+
+  font-family: Sans-Serif;
+}
+.png-image{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  margin:auto;
+  margin-top:10%;
+  height:40vh;
+  margin-bottom: 15%;
+}
+.pikin{
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  margin-top:10%;
+  margin-bottom: 10%;
+  padding: 20%;
+  text-align: center;
+  
+}
+.inner-image{
+  width: 160%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  border-radius: 5px;
+  height: 50vh;
+ opacity: 80%;
+ border-radius: 15px;
+}
+.pikin-inner1{
+  display: flex;
+  justify-content: space-between;
+  margin:auto;
+  width: 100%;
+  margin-top:10px ;
+  color:#030051;
+  font-size: 15px;
+  font-family: Times New Roman;
+  font-weight: 150;
+}
+.pikin-inner2{
+  display: flex;
+  justify-content: space-between;
+  color:grey;
+  width: 100%;
+  margin-top:10% ;
+ font-size: 10px;
+ font-family: Times New Roman;
+ font-weight: 200;
+}
+.vacant{
+  font-size: 25px;
+  font-weight:100;
+  margin-top: 10%;
+}
+.image-div{
+  width: 160%;
+  display: flex;
+  justify-content: center;
+  background: white;
+  opacity: 100%;
+  margin-top: 10%;
+  
+}
+.h2{
+  font-size: 20px;
+  font-weight:400;
+  font-family: Comic Sans MS;
+}
+#signup{
+  display: grid;
+  justify-content: center;
+  border:1px solid grey;
+  width: 80%;
+  margin-top: 20%;
+  text-align: center;
+  margin: auto;
+  border-radius:15px;
+}
+#log{
+  display: grid;
+  justify-content: center;
+  border:1px solid grey;
+  width: 80%;
+  margin-top: 20%;
+  text-align: center;
+  margin: auto;
+  border-radius:15px;
+}
+#signup-input{
+  display: grid;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding:7%;
+  border: 1px solid darkblue;
+}
+#signup-input1{
+  display: grid;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding:7%;
+  border: 1px solid darkblue
+}
+#confirm{
+  display: grid;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding:7%;
+  border: 1px solid darkblue;
+}
+#password-input{
+  display: grid;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding:7%;
+  border: 1px solid darkblue;
+}
+.signup-btn{
+  width:80%;
+  margin-bottom: 10%;
+  color:darkblue;
+  background-color:none ;
+  border-radius: 20px;
+  border:1px solid darkblue;
+  padding: 7%;
+  margin-top: 10%;
+}
+
+#signup-btn{
+  margin-bottom: 10%;
+  color:white;
+  background-color:darkblue ;
+  border-radius: 20px;
+  border:none;
+  padding: 7%;
+  margin-top: 10%;
+}
+.sign-text{
+  font-size: 25px;
+  margin-top: 15%;
+  margin-bottom:10% ;
+  font-weight: 600;
+  font-family: Sans-Serif;
+  color: darkblue;
+}
+#signup-btn:hover{
+  background-color: black;
+  color:white;
+  transition: 0.5 ease;
+  
+}
+hr{
+ background-color:1px solid darkblue;
+}
+#user-div{
+  width:100%;
+}
+#user-welcome{
+  color:darkblue;
+  margin-top: 10%;
+  margin-bottom: 20%;
+}
+#user-main{
+  width: 100%;
+  display: flex;
+  justify-content:space-around;
+  margin-bottom: 20%;
+  font-family: Sans-Serif;
+  font-size: 15px;
+  font-weight:250;
+}
+.user-submain{
+  text-align: center;
+  padding: 30px;
+  border-radius:5px ;
+}
+.user-submain:hover {
+  background-color: darkgold;
+  color:white;
+  transition:0.2ease;
+}
+#child-main3{
+  background-color:#1C0F64;
+  color: white;
+}
+#child-main2{
+  background-color:black;
+  color: white;
+}
+#child-main1{
+  background-color:grey;
+  color: white;
+}
+.user-submain2{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10%;
+}
+#child{
+  background-color: #2F641D;
+  color: white;
+}
+#child2{
+  background-color: #64141A;
+  color: white;
+}
+.submain-2div{
+  text-align: center;
+  padding: 60px;
+  border-radius:10px;
+}
+.submain-2div:hover{
+  background-color: darkblue;
+  transition:0.2 ease;
+}
+#account-info{
+  width: 100%;
+  display:flex;
+  justify-content: space-around;
+}
+.info{
+  color:darkblue ;
+}
+#profile-image{
+  width: 60%;
+  height: 20vh;
+  background-image: black;
+  border-radius: 30px;
+  border:1px solid darkblue;
+}
+input{
+  color:white;
+}
